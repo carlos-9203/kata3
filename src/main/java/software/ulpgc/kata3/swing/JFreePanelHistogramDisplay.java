@@ -28,6 +28,7 @@ public class JFreePanelHistogramDisplay extends JPanel implements HistogramDispl
         for(int i = 0; i < histogram.bins(); i++){
             renderer.setSeriesPaint(i, getRandomColor());
         }
+        return chart;
     }
     private IntervalXYDataset dataset(double[] data, int bins){
         HistogramDataset dataset = new HistogramDataset();
